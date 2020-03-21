@@ -4,13 +4,29 @@
   
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2020/03/17/hello-world/"/>
-      <url>/2020/03/17/hello-world/</url>
+      <title>Test File</title>
+      <link href="/2020/03/22/test-file/"/>
+      <url>/2020/03/22/test-file/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2><h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h3 id="阅读全文测试"><a class="markdownIt-Anchor" href="#阅读全文测试"></a> 阅读全文测试</h3><p>凑够50个字<br />下过大雨，你来看看葡萄园吧，那叫好看！白的像白玛瑙，红的像红宝石，紫的像紫水晶，黑的像黑玉。一串一串，饱满、磁棒、挺括，璀璨琳琅。你就把《说文解字》里的玉字偏旁的字都搬了来吧，那也不够用呀！</p><a id="more"></a><h3 id="tagcategories-test"><a class="markdownIt-Anchor" href="#tagcategories-test"></a> Tag&amp;Categories Test</h3><p>上面</p><h3 id="会自动添加date吗"><a class="markdownIt-Anchor" href="#会自动添加date吗"></a> 会自动添加date吗</h3><p>会的</p><h3 id="关闭评论"><a class="markdownIt-Anchor" href="#关闭评论"></a> 关闭评论</h3><p>会的</p><h3 id="代码展示测试"><a class="markdownIt-Anchor" href="#代码展示测试"></a> 代码展示测试</h3><p>python code</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ___name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    print(<span class="string">"AI"</span>)</span><br></pre></td></tr></table></figure><p>java code</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> pack</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello World"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
       
+      <categories>
+          
+          <category> TestCate1 </category>
+          
+          <category> TestCate2 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> TestTag1 </tag>
+            
+            <tag> TestTag2 </tag>
+            
+        </tags>
       
     </entry>
     
