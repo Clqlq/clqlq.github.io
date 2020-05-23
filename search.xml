@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>技术栈指北</title>
+      <link href="/2020/05/24/%E6%8A%80%E6%9C%AF%E6%A0%88%E6%8C%87%E5%8C%97/"/>
+      <url>/2020/05/24/%E6%8A%80%E6%9C%AF%E6%A0%88%E6%8C%87%E5%8C%97/</url>
+      
+        <content type="html"><![CDATA[<p>作为一个crud boy，想要在当今国内的互联网环境下安身立命，避免跳槽时力有不逮，各类技术都需要掌握娴熟，知其然也知其所以然。</p><p>想着如果日后不懒惰，写一片片技术笔记，也最好有个目录可供参考，感觉博客自带的tags和categories显得略微杂乱。</p><h3 id="1-java"><a class="markdownIt-Anchor" href="#1-java"></a> 1. Java</h3><h4 id="11-effective-java-3rd"><a class="markdownIt-Anchor" href="#11-effective-java-3rd"></a> 1.1 Effective-Java-3rd</h4><p>Effective-Java-3rd 的学习笔记</p><h3 id="2-数据库"><a class="markdownIt-Anchor" href="#2-数据库"></a> 2. 数据库</h3><h4 id="21-mysql"><a class="markdownIt-Anchor" href="#21-mysql"></a> 2.1 MySQL</h4><h4 id="22-redis"><a class="markdownIt-Anchor" href="#22-redis"></a> 2.2 Redis</h4><h3 id="3-springboot"><a class="markdownIt-Anchor" href="#3-springboot"></a> 3. SpringBoot</h3><h3 id="4-数据持久层框架"><a class="markdownIt-Anchor" href="#4-数据持久层框架"></a> 4. 数据持久层框架</h3><h4 id="41-mybatis"><a class="markdownIt-Anchor" href="#41-mybatis"></a> 4.1 Mybatis</h4><h3 id="5-rpc-框架"><a class="markdownIt-Anchor" href="#5-rpc-框架"></a> 5. RPC 框架</h3><h4 id="51-dubbo"><a class="markdownIt-Anchor" href="#51-dubbo"></a> 5.1 Dubbo</h4><h3 id="6-依赖配置与构建工具"><a class="markdownIt-Anchor" href="#6-依赖配置与构建工具"></a> 6. 依赖配置与构建工具</h3><h4 id="61-gradle"><a class="markdownIt-Anchor" href="#61-gradle"></a> 6.1 Gradle</h4><h3 id="7-设计模式"><a class="markdownIt-Anchor" href="#7-设计模式"></a> 7. 设计模式</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 总结 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 总结 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java可变长度参数</title>
+      <link href="/2020/04/16/Java%E5%8F%AF%E5%8F%98%E9%95%BF%E5%BA%A6%E5%8F%82%E6%95%B0/"/>
+      <url>/2020/04/16/Java%E5%8F%AF%E5%8F%98%E9%95%BF%E5%BA%A6%E5%8F%82%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<p>Java中的可变长度参数使用三个点表示，如：</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">vaTest</span><span class="params">(<span class="keyword">int</span> ... v)</span> </span>&#123;</span><br><span class="line">    System.out.print(<span class="string">"Number of Args: "</span> + v.length + <span class="string">" Contents: "</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x: v)</span><br><span class="line">        System.out.print(x + <span class="string">" "</span>);</span><br><span class="line">    System.out.println();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>虽然较为简单，但是也存在一些容易造成编译失败的问题，即方法重载造成的模糊性问题：</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">vaTest</span><span class="params">(<span class="keyword">int</span> ...v)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">vaTest</span><span class="params">(<span class="keyword">boolean</span> .. v)</span></span>;</span><br></pre></td></tr></table></figure><p>对于上述定义的方法，若代码中出现<code>vaTest()</code>等空参数调用，则由于调用的含糊不清，会编译失败。</p><p>类似地如下代码，也存在模糊性问题</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">vaTest</span><span class="params">(<span class="keyword">int</span> i, <span class="keyword">int</span> ...v)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">vaTest</span><span class="params">(<span class="keyword">int</span> ...v)</span></span>;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java多态中方法的优先级</title>
       <link href="/2020/04/16/Java%E5%A4%9A%E6%80%81%E4%B8%AD%E6%96%B9%E6%B3%95%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/"/>
       <url>/2020/04/16/Java%E5%A4%9A%E6%80%81%E4%B8%AD%E6%96%B9%E6%B3%95%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/</url>
